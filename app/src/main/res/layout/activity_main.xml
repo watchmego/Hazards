@@ -1,169 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.hazards.MainActivity"
-    android:background="@android:color/black"
-    android:fillViewport="false">
-    <LinearLayout
-        android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@android:color/black">
+        android:text="Add Project"
+        android:id="@+id/add_project_button" />
 
-        <EditText
-            android:id="@+id/email_address"
-            android:layout_height="wrap_content"
-            android:hint="Email address"
-            android:inputType="textEmailAddress"
-            android:layout_width="match_parent"
-            android:autoText="false"
-            android:background="#ffffff"
-            android:outlineProvider="background"
-            android:textStyle="bold"
-            android:layout_marginBottom="2dp">
-        </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Projects"
+        android:id="@+id/project_list" />
 
-        <EditText
-            android:id="@+id/site_name"
-            android:layout_height="wrap_content"
-            android:hint="Name of the Site"
-            android:inputType="text"
-            android:layout_width="fill_parent"
-            android:background="#ffffff"
-            android:outlineProvider="background"
-            android:textStyle="bold"
-            android:padding="5dp"
-            android:layout_marginBottom="2dp">
-        </EditText>
+    <ScrollView
 
-        <EditText
-            android:id="@+id/contractors_name"
-            android:layout_height="wrap_content"
-            android:hint="Your Name"
-            android:inputType="textPersonName"
-            android:layout_width="fill_parent"
-            android:background="#ffffff"
-            android:outlineProvider="background"
-            android:textStyle="bold"
-            android:layout_marginBottom="2dp">
-        </EditText>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/site_address"
-            android:layout_height="wrap_content"
-            android:hint="Address of the job"
-            android:inputType="text"
-            android:layout_width="fill_parent"
-            android:background="#ffffff"
-            android:outlineProvider="background"
-            android:textStyle="bold"
-            android:layout_marginBottom="2dp">
-        </EditText>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/project_view">
+    </FrameLayout>
 
-        <EditText
-            android:id="@+id/contractor_company"
-            android:layout_height="wrap_content"
-            android:hint="Your company's name"
-            android:inputType="text"
-            android:layout_width="fill_parent"
-            android:background="#ffffff"
-            android:outlineProvider="background"
-            android:textStyle="bold"
-            android:layout_marginBottom="2dp">
-        </EditText>
+    </ScrollView>
 
-        <EditText
-            android:id="@+id/project_id"
-            android:layout_height="wrap_content"
-            android:hint="Project Id"
-            android:inputType="text"
-            android:layout_width="fill_parent"
-            android:background="#ffffff"
-            android:outlineProvider="background"
-            android:textStyle="bold"
-            android:layout_marginBottom="2dp">
-        </EditText>
-
-        <EditText
-            android:id="@+id/work_type"
-            android:layout_height="wrap_content"
-            android:hint="Type of work you are doing"
-            android:inputType="text"
-            android:layout_width="fill_parent"
-            android:background="#ffffff"
-            android:outlineProvider="background"
-            android:textStyle="bold"
-            android:layout_marginBottom="2dp">
-        </EditText>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/addHazardButton" />
-
-        <EditText
-            android:id="@+id/hazard_name"
-            android:layout_height="wrap_content"
-            android:hint="Name of the hazard you have seen"
-            android:inputType="text"
-            android:layout_width="fill_parent"
-            android:background="#ffffff"
-            android:outlineProvider="background"
-            android:textStyle="bold"
-            android:layout_marginBottom="2dp">
-        </EditText>
-
-        <EditText
-            android:id="@+id/hazard_description"
-            android:layout_height="wrap_content"
-            android:hint="Description of the hazard"
-            android:inputType="textMultiLine"
-            android:lines="5"
-            android:layout_width="fill_parent"
-            android:background="#ffffff"
-            android:outlineProvider="background"
-            android:textStyle="bold"
-            android:layout_marginBottom="2dp">
-        </EditText>
-
-        <EditText
-            android:id="@+id/hazard_mitigation"
-            android:layout_height="wrap_content"
-            android:hint="What have you done about the hazard?"
-            android:inputType="textMultiLine"
-            android:lines="5"
-            android:layout_width="fill_parent"
-            android:background="#ffffff"
-            android:outlineProvider="background"
-            android:textColor="@android:color/black"
-            android:textStyle="bold"
-            >
-        </EditText>
-
-        <Button
-            android:id="@+id/submit_button"
-            android:layout_height="wrap_content"
-            android:text="Submit and Email"
-            android:onClick="submitinfo"
-            android:layout_width="fill_parent">
-        </Button>
-
-
-
-
-
-
-
-
-    </LinearLayout>
-
-
-</ScrollView>
+</LinearLayout>

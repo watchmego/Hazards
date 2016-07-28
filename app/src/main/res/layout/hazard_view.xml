@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="false"
+    tools:context=".AddProject">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/hazard_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#ffffff"
+            android:hint="Name of the hazard you have seen"
+            android:inputType="text"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/hazard_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#ffffff"
+            android:hint="Description of the hazard"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:outlineProvider="background"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/hazard_mitigation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:hint="What have you done about the hazard?"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:textColor="@android:color/white"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:onClick="saveinfo"
+            android:layout_width="fill_parent">
+        </Button>
+    </LinearLayout>
+
+</ScrollView>

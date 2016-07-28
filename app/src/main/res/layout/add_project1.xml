@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProject1"
+    android:background="@android:color/white"
+    android:fillViewport="false"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Email Address"
+            android:id="@+id/textView" />
+
+        <EditText
+            android:id="@+id/email_address"
+            android:layout_height="wrap_content"
+            android:hint="Email address"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:background="@drawable/my_border"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+            android:paddingBottom="10dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Site Name"
+            android:id="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/site_name"
+            android:layout_height="wrap_content"
+            android:hint="Name of the Site"
+            android:inputType="text"
+            android:layout_width="fill_parent"
+            android:background="@drawable/my_border"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+            android:paddingBottom="10dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Your Name"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/contractors_name"
+            android:layout_height="wrap_content"
+            android:hint="Your Name"
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent"
+            android:background="@drawable/my_border"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+            android:paddingBottom="10dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Site Address"
+            android:id="@+id/textView4" />
+
+        <EditText
+            android:id="@+id/site_address"
+            android:layout_height="wrap_content"
+            android:hint="Address of the job"
+            android:inputType="text"
+            android:layout_width="fill_parent"
+            android:background="@drawable/my_border"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+            android:paddingBottom="10dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Company Name"
+            android:id="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/contractor_company"
+            android:layout_height="wrap_content"
+            android:hint="Your company's name"
+            android:inputType="text"
+            android:layout_width="fill_parent"
+            android:background="@drawable/my_border"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+            android:paddingBottom="10dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Project ID"
+            android:id="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/project_id"
+            android:layout_height="wrap_content"
+            android:hint="Project Id"
+            android:inputType="text"
+            android:layout_width="fill_parent"
+            android:background="@drawable/my_border"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+            android:paddingBottom="10dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Type of work"
+            android:id="@+id/textView7" />
+
+        <EditText
+            android:id="@+id/work_type"
+            android:layout_height="wrap_content"
+            android:hint="Type of work you are doing"
+            android:inputType="text"
+            android:layout_width="fill_parent"
+            android:background="@drawable/my_border"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+            android:paddingBottom="10dp">
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add new hazard"
+            android:id="@+id/addHazardButton" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container">
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_height="wrap_content"
+            android:text="Submit and Email"
+            android:onClick="submitinfo"
+            android:layout_width="fill_parent">
+        </Button>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

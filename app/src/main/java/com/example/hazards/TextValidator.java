@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 public abstract class TextValidator implements TextWatcher {
 
 /*
-    MainActivity mEmailAddressField;
+    AddProject mEmailAddressField;
 
     public TextValidator(TextView mEmailAddressField) {
 

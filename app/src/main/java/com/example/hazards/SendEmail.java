@@ -4,7 +4,6 @@ import android.os.Environment;
 import android.util.Log;
 
 import java.io.File;
-import java.security.Security;
 import java.util.Date;
 import java.util.Properties;
 import javax.activation.CommandMap;
@@ -24,7 +23,7 @@ import javax.mail.internet.MimeMultipart;
 
 public class SendEmail extends javax.mail.Authenticator {
 
-    public static final String TAG = MainActivity.class.getSimpleName();
+    public static final String TAG = AddProject.class.getSimpleName();
         private String _user;
         private String _pass;
 

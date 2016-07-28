@@ -21,12 +21,30 @@
         </activity>
         <activity
             android:name="CreatePDF"
-            android:parentActivityName="MainActivity"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="MainActivity" />
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="AddHazard"
+            android:parentActivityName=".AddProject"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AddProject" />
+        </activity>
+        <activity
+            android:name=".AddProject"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
     </application>
 
